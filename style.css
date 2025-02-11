@@ -518,3 +518,14 @@ button[type="submit"]:hover {
       opacity: 0.5;
   }
 }
+.copyright {
+  border-top: 1px solid lightgrey;
+  padding-top: 40px;
+  width: 100%;
+  float: center;
+}
+.copyright a {
+padding: 0px 4px;
+text-decoration: none;
+color: #fff;
+}
