@@ -43,7 +43,7 @@ header {
   height: auto;
   padding: 28px 20px;
   z-index: 50;
-  background-color: rgb(24, 23, 23);
+  background-color: rgb(4, 41, 38);
 }
 
 
@@ -76,7 +76,7 @@ nav p {
 }
 
 nav.navItems p>a {
-  color: rgb(20, 155, 189);
+  color: rgb(54, 255, 4);
   font-weight: bold;
   font-size: 1.3em;
 }
@@ -108,7 +108,7 @@ nav.mobile-menu {
   height: 100vh;
   width: 75%;
   padding-left: 25px;
-  background-color: #161616;
+  background-color: #061725;
   color: white;
   z-index: 999;
   display: flex;
@@ -146,12 +146,13 @@ nav.mobile-menu a::after {
 
 .slider {
   height: 90vh;
-  background-color: #061725;
-  background-image: url('./image.jpg');
+  background-color: rgb(4, 41, 38);
+  background-image: url('./images/image.jpeg');
   background-size: contain;
-  background-blend-mode: multiply;
+  background-blend-mode: color-burn;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;
@@ -163,20 +164,22 @@ nav.mobile-menu a::after {
 .slider > h1{
   font-weight: bolder;
   font-size: 2.5em;
+  color: rgb(30, 255, 0);
 }
 .slider p{
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.1em;
+  color: rgb(255, 255, 255)
 }
 
 .slider a{
-  background-color: rgb(161, 161, 22);
-  color: white;
-  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 15px;
   margin-top: 20px;
   font-size: 1em;
   font-weight: bold;
-  border-radius: 1em;
+  border-radius: .6em;
   transition: all 200ms ease;
 }
 .slider a:hover{
@@ -212,8 +215,7 @@ section > h2 {
   background-blend-mode: multiply;
   color: white;
   background-attachment: fixed;
-  height: 75vh;
-  padding-left: 25px;
+  padding: 25px 0 50px 25px;
   font-size: 1.2em;
 }
 
@@ -233,13 +235,13 @@ section > h2 {
 }
 
 .projects{
-  background-color: #072b0a;
+  background-color: #032b0d;
   background-image: url('./images/image_1.jpeg');
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
   color: white;
-  height: 60vh;
+  height: 40vh;
   padding-left: 25px;
   font-size: 1.2em;
 }
@@ -267,8 +269,8 @@ section > h2 {
 
 .gallery-container {
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
 	padding: 10px;
 }
 
@@ -291,7 +293,7 @@ section > h2 {
 }
 
 footer {
-  background-color: #0f0f0f;
+  background-color: rgb(4, 41, 38);;
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -333,7 +335,7 @@ footer > p::before{
 
 /* MEDIA QUERIES FOR BREAKPOINTS */
 
-@media (max-width: 510px) {
+@media (max-width: 645px) {
   .navbar .navItems div.nav-links{
     display: none;
   }
@@ -345,19 +347,6 @@ footer > p::before{
   nav.navItems p>a {
     font-size: 1em;
   }
-}
-
-@media (min-width: 510px) {
-
-  nav.mobile-menu {
-    display: none;
-  }
-
-  i.fa-bars {
-    display: none;
-  }
-}
-@media (max-width: 645px) {
   .navItems{
     padding: 0 1% 0 8%;
   }
@@ -375,5 +364,22 @@ footer > p::before{
   .about, .projects{
     padding-left: 10px;
     font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-container{
+    place-items: center;
+  }
+}
+
+@media (min-width: 645px) {
+
+  nav.mobile-menu {
+    display: none;
+  }
+
+  i.fa-bars {
+    display: none;
   }
 }
