@@ -15,11 +15,6 @@ h2,
 h3 {
 	font-family: 'Montserrat', sans-serif ;
 }
-
-button {
-	font-family: 'Lato', sans-serif ;
-}
-
 a {
 	text-decoration: none;
 }
@@ -286,6 +281,9 @@ section > h2 {
 .contact{
   background-color: #041806;
   padding-left: 50px;
+}
+.contact a{
+  color: aliceblue;
 }
 
 footer {
