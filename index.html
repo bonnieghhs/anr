@@ -3,122 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANR Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/">
-          <img src="image.jpg" 
-               alt="Brand logo"> 
-                  <span class="brand-logo-name">
-                 A N R               FOUNDATION
-                  </span>
-          </a>
-       
-            
-        </nav>
+    <header>
+        <div class="navbar">
+            <nav class="navItems">
+                <p><a href="#">ANR FOUNDATION</a></p>
+                <div class="nav-links">
+                    <a href="#">HOME</a>
+                    <a href="#about-us">ABOUT US</a>
+                    <a href="#gallery">GALLERY</a>
+                    <a href="#contact">CONTACT US</a>
+                </div>
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </nav>
+            <!-- mobile menu -->
+            <nav class="mobile-menu hidden">
+                <a href="#" class="navigation_link">HOME</a>
+                <a href="#about-us" class="navigation_link">ABOUT US</a>
+                <a href="#gallery" class="navigation_link">GALLERY</a>
+                <a href="#contact" class="navigation_link">CONTACT US</a>
+                <i class="fa-solid fa-times" id="closeMenu"></i>
+            </nav>
+        </div>
     </header>
 
+    <div class="slider">
+        <h1>Welcome To ANR Foundation.</h1>
+        <p>Creating opportunities for the next generation through education and partnerships.</p>
+        <a href="#about-us" class="btn">Learn More</a>
+    </div>
 
-    
-            <div class="img-container">
-                <img src=
-"image.jpeg.jpeg"
-                     alt="school img" class="school-img">
-                <h1 class="img-title">
-                 
-                  </h1>
-            </div>
+    <!-- About Us -->
+    <section id="about-us" class="about">
+        <h1>About Us</h1>
+        <h2>Our Vision</h2>
+        <p>To equip and empower schools, teachers, and students in underserved communities who will create opportunities
+            for the next generation.</p>
+        <h2>Our Goals</h2>
+        <ul>
+            <li>We create solutions with schools and local communities.</li>
+            <li>We find joy in our work and our team, and are always listening and learning.</li>
+            <li>We build partnerships based on trust and transformative impact.</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Our Projects</h2>
+        <div class="project-item">
+            <h3>Kenyerere Junior Academy</h3>
+            <p>-A <a href="https://kenyerere.netlify.app" target="_blank" style="color: blueviolet;">Community School</a> in Kenyerere, Gucha, Kisii County, offering Playgroup up to Grade 6 CBC Curriculum to
+                the local community.</p>
         </div>
+    </section>
 
-        <section id="vision">
-            <h2 class="vision-heading">Our Vision:</h2>
-            <p>To equip and empower schools, teachers and students in underserved communities who will create opportunities for the next generation.
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="./images/image_1.jpeg" alt="image 1">
+            <img src="./images/image_2.jpeg" alt="image 2">
+            <img src="./images/image_3.jpeg" alt="image 3">
+            <img src="./images/image_4.jpeg" alt="image 4">
+            <img src="./images/image_5.jpeg" alt="image 5">
+            <img src="./images/image_6.jpeg" alt="image 6">
+        </div>
+    </section>
 
-        </section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><i class="fa-solid fa-location-dot" style="margin-right: 12px;"></i> P.O. Box 28792-00200, Nairobi, Kenya</p>
+        <p><i class="fa-solid fa-phone" style="margin-right: 12px;"></i> <a href="tel:+254726248537">+254 726 248 537</a></p>
+        <p><i class="fa-solid fa-envelope" style="margin-right: 12px;"></i> <a href="mailto:ray.atandi@gmail.com">ray.atandi@gmail.com</a></p>
+    </section>
 
-        <section id="vision">
-            <h2 class="vision-heading">Our Goals: </h2>
-            <p>We are passionately purpose-driven. We create solutions with schools and local communities. We find joy in our work and our team, and are always listening and learning. We find partnerships in trust and transformative impact.
-
-        </section>
-
-     
-                              </p>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#about-us">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div>
+                    <a href="https://wa.me/254726248537"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-
-        <section id="about-us-section">
-            <div class="about-us-container">
-                <h2 class="aboutus-heading">Our Projects:</h2>
-                <p>
-                    <strong class="subheading"> 
-                        Kenyerere Junior Academy.
-                      </strong>
-                      A Community School in Kenyerere, Gucha, Kisii County. Offering Playgroup up to Grade 6 CBC Curriculum to the local community.
-                </p>
-            </div>
-        </section>
-        <!---FOOTER SECTION--->
-
-<div class="footer">
-    <div class="container">
-      <div class="footer-sect">
-        
-      </div>
-      <div class="footer-sect">
-        <address> P.O. Box 28792-00200
-            Nairobi, Kenya </address>
-      </div>
-      <div class="footer-sect">
-         TEL: +254.726.248.537
-      </div>
-      <div class="footer-sect">
-        EMAIL: ray.atandi@gmail.com
-      
-      </div>
-    
-      </div>
-    </div>
-  </div>
-
-        
-        </section>
-
-    
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My School. All rights reserved.</p>
+        <p class="footer-text">© <span id="year"></span> ANR Foundation. All Rights Reserved.</p>
     </footer>
-
-    <script src="index.js"></script>
-    
-    <div class="copyright">
-
-        <div class="container">
-        
-          <div class="footer-inner">@ All Copyrights By Kenyerere Junior Academy</div>
-          
-          <div class="footer-inner"> 
-              <a href="#">Privacy Policy |</a> 
-              <a href="#">Terms & Condition</a> 
-          </div>
-    
-          
-        </div>
-        
-      </div>
-
 </body>
 
 </html>
